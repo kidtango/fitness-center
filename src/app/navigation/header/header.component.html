@@ -10,7 +10,11 @@
       <li><a routerLink="/signup" [hidden]="isAuth">Signup</a></li>
       <li><a routerLink="/login" [hidden]="isAuth">Login</a></li>
       <li><a routerLink="/training" [hidden]="!isAuth">Training</a></li>
-      <li><a routerLink="/logout" [hidden]="!isAuth">Logout</a></li>
+      <li>
+        <a style="cursor: pointer" (click)="onLogout()" [hidden]="!isAuth"
+          >Logout</a
+        >
+      </li>
     </ul>
   </div>
 </mat-toolbar>

@@ -23,7 +23,7 @@
     <div [hidden]="!isAuth">
       <button mat-icon-button>
         <mat-icon class="navigation-captions">eject </mat-icon>
-        <span>Logout</span>
+        <span (click)="onLogout()">Logout</span>
       </button>
     </div>
   </mat-list-item>
